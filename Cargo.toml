@@ -1,6 +1,6 @@
 [package]
 name = "rquest"
-version = "0.20.23"
+version = "0.20.25"
 description = "An fast asynchronous Rust Http/WebSocket Client with TLS/JA3/JA4/HTTP2 fingerprint impersonate"
 keywords = ["http", "client", "websocket", "ja3", "ja4"]
 categories = ["web-programming::http-client"]
@@ -101,7 +101,7 @@ mime_guess = { version = "2.0", default-features = false, optional = true }
 
 encoding_rs = "0.8"
 http-body = "0.4.6"
-hyper = { package = "rhyper", version = "0.14.51", default-features = false, features = [
+hyper = { package = "rhyper", version = "=0.14.60", default-features = false, features = [
     "tcp",
     "http1",
     "client",
@@ -163,7 +163,7 @@ system-configuration = "0.6.0"
 
 [dev-dependencies]
 env_logger = "0.10.0"
-hyper = { package = "rhyper", version = "0.14.51", default-features = false, features = [
+hyper = { package = "rhyper", version = "0.14.60", default-features = false, features = [
     "tcp",
     "stream",
     "http1",

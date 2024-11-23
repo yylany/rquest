@@ -929,7 +929,7 @@ impl ClientBuilder {
         mut self,
         order: impl Into<Option<[SettingsOrder; 2]>>,
     ) -> ClientBuilder {
-        self.config.builder.http2_settings_order(order.into());
+        self.config.builder.http2_settings_order(Default::default());
         self
     }
 
