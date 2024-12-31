@@ -1,6 +1,6 @@
 [package]
 name = "rquest"
-version = "0.20.25"
+version = "0.20.26"
 description = "An fast asynchronous Rust Http/WebSocket Client with TLS/JA3/JA4/HTTP2 fingerprint impersonate"
 keywords = ["http", "client", "websocket", "ja3", "ja4"]
 categories = ["web-programming::http-client"]
@@ -118,9 +118,9 @@ ipnet = "2.9.0"
 # Optional deps...
 
 ## boring-tls
-boring = { package = "rboring", version = "4", optional = true }
-boring-sys = { package = "rboring-sys", version = "4", optional = true }
-tokio-boring = { package = "tokio-rboring", version = "4", optional = true }
+boring = { version = "4.13.0", optional = true }
+boring-sys = {version = "4.13.0" ,optional = true}
+tokio-boring = { version = "4", optional = true }
 foreign-types = { version = "0.5.0", optional = true }
 brotli_crate = { package = "brotli", version = "6", optional = true }
 flate2 = { version = "1", optional = true }
