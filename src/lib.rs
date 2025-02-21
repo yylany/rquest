@@ -373,4 +373,7 @@ mod proxy;
 pub mod redirect;
 #[cfg(feature = "boring-tls")]
 pub mod tls;
+#[cfg(feature = "boring-tls")]
+pub use tls::Impersonate;
+
 mod util;
