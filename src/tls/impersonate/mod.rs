@@ -12,6 +12,7 @@ use edge::*;
 use http::HeaderMap;
 use okhttp::*;
 use safari::*;
+use serde::{Deserialize, Serialize};
 use std::{fmt::Debug, str::FromStr};
 use Impersonate::*;
 
@@ -82,7 +83,7 @@ pub fn tls_settings(ver: Impersonate) -> TlsResult<(TlsSettings, Box<dyn FnOnce(
     )
 }
 
-#[derive(Clone, Copy, Debug, Default)]
+#[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Deserialize, Serialize)]
 pub enum Impersonate {
     // Chrome
     Chrome100,
